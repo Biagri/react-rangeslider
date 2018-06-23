@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Horizontal, Negative, Float, Labels, Orientation } from './sliders'
+import { Horizontal, Negative, Float, Labels, Orientation, Tooltip } from './sliders'
 import Demo from './Demo'
 import Codeblock from './Codeblock'
 
@@ -8,6 +8,7 @@ import negativeExample from '!raw!./sliders/negative'
 import floatExample from '!raw!./sliders/float'
 import labelsExample from '!raw!./sliders/labels'
 import orientationExample from '!raw!./sliders/orientation'
+import tooltipExample from '!raw!./sliders/tooltip'
 
 class Examples extends Component {
   render () {
@@ -42,6 +43,12 @@ class Examples extends Component {
           <Orientation />
           <Codeblock>
             {orientationExample}
+          </Codeblock>
+        </Demo>
+        <Demo title='Always Visible Tooltip'>
+          <Tooltip />
+          <Codeblock>
+            {tooltipExample}
           </Codeblock>
         </Demo>
       </section>
